@@ -1,8 +1,13 @@
+const body = document.querySelector("body");
+const grid = document.createElement("div");
+grid.id = "grid"
+body.appendChild(grid);
+
+
 for (i = 0; i < 4; i++) {
   const div = document.createElement("div");
   div.id = `row${i + 1}`;
-  const body = document.querySelector("body");
-  body.appendChild(div);
+  grid.appendChild(div);
 
   // write another for loop that, upon each iteration, creates a new div with a
   // numbered row class and column class
