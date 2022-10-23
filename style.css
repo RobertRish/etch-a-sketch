@@ -18,6 +18,15 @@ button {
     border: 5px solid black;
 }
 
+#newGrid {
+    display: flex;
+    flex-direction: column;
+    height: 100vw;
+    width: 100%;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+
 .row {
     display: flex;
     flex-direction: row;

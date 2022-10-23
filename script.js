@@ -20,22 +20,12 @@ for (i = 0; i < 4; i++) {
   }
 }
 
-// Makes grid cells change color upon mouse hover
-
-const columnDivs = document.querySelectorAll(".column");
-
-columnDivs.forEach((col) => {
-  col.addEventListener("mouseover", function handleMouseOver(e) {
-    col.classList.add("color");
-  });
-});
-
 // Adds functionality to button
 
 const button = document.querySelector("button");
 button.addEventListener("click", function handleClick() {
   const pixels = window.prompt(
-    "Enter the number of pixels per side (it'll be a perfect square so only enter one numerical value) you would like your sketch pad to have.: (Maximum: 100)"
+    "Enter the number of pixels per side (it'll be a perfect square so only enter one numerical value) you would like your sketch pad to have: (Maximum: 100)"
   );
   grid.remove();
   const newGrid = document.createElement("div");
@@ -57,4 +47,24 @@ button.addEventListener("click", function handleClick() {
     }
   }
   createNewGrid(pixels);
+
+  // Reinstantiates hover effect for new grid
+
+  const columnDivs = document.querySelectorAll(".column");
+
+  columnDivs.forEach((col) => {
+    col.addEventListener("mouseover", function handleMouseOver(e) {
+      col.classList.add("color");
+    });
+  });
+});
+
+// Makes grid cells change color upon mouse hover
+
+const columnDivs = document.querySelectorAll(".column");
+
+columnDivs.forEach((col) => {
+  col.addEventListener("mouseover", function handleMouseOver(e) {
+    col.classList.add("color");
+  });
 });
