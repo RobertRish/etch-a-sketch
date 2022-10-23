@@ -4,7 +4,7 @@ createGrid.id = "grid";
 body.appendChild(createGrid);
 const grid = document.getElementById("grid");
 
-
+// Creates grid
 
 for (i = 0; i < 4; i++) {
   const createRow = document.createElement("div");
@@ -15,8 +15,17 @@ for (i = 0; i < 4; i++) {
 
   for (j = 0; j < 4; j++) {
     const colDiv = document.createElement("div");
-    colDiv.className = 'column';
+    colDiv.className = "column";
     rowDiv.appendChild(colDiv);
-  };
-};
+  }
+}
 
+// Makes grid cells change color upon mouse hover
+
+const columnDivs = document.querySelectorAll('.column');
+
+columnDivs.forEach( col => {
+  col.addEventListener("mouseover", function handleMouseOver(e) {
+    col.classList.add("color");
+  });
+});
