@@ -1,6 +1,12 @@
 body {
-    display: flex;
     margin: 0;
+}
+
+button {
+  margin: 50px 35%;
+  width: 30%;
+  padding: 10px;
+  font-size: 3vw;
 }
 
 #grid {
@@ -19,11 +25,11 @@ body {
     height: 25%;
     width: auto;
     box-sizing: border-box;
-    border: 5px solid blue;
+    /* border: 5px solid blue; */
 }
 
 .column {
-    border: 5px solid green;
+    /* border: 5px solid black; */
     flex-grow: 1;
     height: 100%;
 }
