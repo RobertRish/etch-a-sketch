@@ -7,22 +7,37 @@ button {
   width: 30%;
   padding: 10px;
   font-size: 3vw;
+  border-radius: 8px;
+  font-family: 'B612 Mono', monospace;
+  box-shadow: 5px 5px 18px #aaaaaa;
+  color: rgb(117, 116, 116);
+  background-color: rgb(236, 233, 233);
 }
 
 #grid {
     display: flex;
     flex-direction: column;
-    height: 100vw;
-    width: 100%;
+    height: 50vw;
+    max-height: 860px;
+    width: 50%;
+    max-width: 860px;
+    margin: 0 auto;
     box-sizing: border-box;
     border: 5px solid black;
+}
+
+#grid:hover {
+    cursor: crosshair;
 }
 
 #newGrid {
     display: flex;
     flex-direction: column;
-    height: 100vw;
-    width: 100%;
+    height: 50vw;
+    max-height: 860px;
+    width: 50%;
+    max-width: 860px;
+    margin: 0 auto;
     box-sizing: border-box;
     border: 5px solid black;
 }
