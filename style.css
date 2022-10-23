@@ -22,7 +22,7 @@ button {
     display: flex;
     flex-direction: row;
     align-items: stretch;
-    height: 25%;
+    flex-grow: 1;
     width: auto;
     box-sizing: border-box;
     /* border: 5px solid blue; */
