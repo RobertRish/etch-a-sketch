@@ -9,9 +9,25 @@ button {
   font-size: 3vw;
   border-radius: 8px;
   font-family: 'B612 Mono', monospace;
-  box-shadow: 5px 5px 18px #aaaaaa;
+  box-shadow: 5px 5px 18px #3a3a3a;
   color: rgb(117, 116, 116);
   background-color: rgb(236, 233, 233);
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+h1 {
+    display: block;
+    font-family: 'B612 Mono', monospace;
+    font-size: 1rem;
+    color: rgb(117, 116, 116);
+    width: 60%;
+    text-align: center;
+    margin: 20px 20%;
+
+    
 }
 
 #grid {
