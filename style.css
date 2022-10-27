@@ -58,6 +58,10 @@ h1 {
     border: 5px solid black;
 }
 
+#newGrid:hover {
+    cursor: crosshair;
+}
+
 .row {
     display: flex;
     flex-direction: row;
