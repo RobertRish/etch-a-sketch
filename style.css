@@ -1,5 +1,6 @@
 body {
     margin: 0;
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(218,219,219,1) 0%, rgba(102,103,103,1) 100%);
 }
 
 button {
@@ -10,7 +11,7 @@ button {
   border-radius: 8px;
   font-family: 'B612 Mono', monospace;
   box-shadow: 5px 5px 18px #3a3a3a;
-  color: rgb(117, 116, 116);
+  color: black;
   background-color: rgb(236, 233, 233);
 }
 
@@ -22,7 +23,7 @@ h1 {
     display: block;
     font-family: 'B612 Mono', monospace;
     font-size: 1rem;
-    color: rgb(117, 116, 116);
+    color: white;
     width: 60%;
     text-align: center;
     margin: 20px 20%;
@@ -76,6 +77,7 @@ h1 {
     /* border: 5px solid black; */
     flex-grow: 1;
     height: 100%;
+    background-color: white;
 }
 
 .color {
