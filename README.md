@@ -9,7 +9,7 @@ Users can simply hover their mouse cursors over the sketch pad to fill in the pi
 https://robertrish.github.io/etch-a-sketch/
 
 ## Technologies Used
-HTML, CSS, JavaScript
+HTML, CSS, JavaScript, and jQuery
       
 ## Screenshot
 ![screenshot of app](screenshot.png)
