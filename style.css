@@ -1,6 +1,7 @@
 body {
-    margin: 0;
-    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(218,219,219,1) 0%, rgba(102,103,103,1) 100%);
+  margin: 0;
+  background: -webkit-gradient(linear, left top, right top, from(white), color-stop(0%, #dadbdb), to(#666767));
+  background: linear-gradient(90deg, white 0%, #dadbdb 0%, #666767 100%);
 }
 
 button {
@@ -9,77 +10,101 @@ button {
   padding: 10px;
   font-size: 2vw;
   border-radius: 8px;
-  font-family: 'B612 Mono', monospace;
-  box-shadow: 5px 5px 18px #3a3a3a;
+  font-family: "B612 Mono", monospace;
+  -webkit-box-shadow: 5px 5px 18px #3a3a3a;
+          box-shadow: 5px 5px 18px #3a3a3a;
   color: black;
-  background-color: rgb(236, 233, 233);
+  background-color: #ece9e9;
 }
 
 button:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 h1 {
-    display: block;
-    font-family: 'B612 Mono', monospace;
-    font-size: 1rem;
-    color: white;
-    width: 60%;
-    text-align: center;
-    margin: 20px 20%;
-
-    
+  display: block;
+  font-family: "B612 Mono", monospace;
+  font-size: 1rem;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: 20px 20%;
 }
 
 #grid {
-    display: flex;
-    flex-direction: column;
-    height: 50vw;
-    max-height: 860px;
-    width: 50%;
-    max-width: 860px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vw;
+  max-height: 860px;
+  width: 50%;
+  max-width: 860px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid black;
 }
 
 #grid:hover {
-    cursor: crosshair;
+  cursor: crosshair;
 }
 
 #newGrid {
-    display: flex;
-    flex-direction: column;
-    height: 50vw;
-    max-height: 860px;
-    width: 50%;
-    max-width: 860px;
-    margin: 0 auto;
-    box-sizing: border-box;
-    border: 5px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 50vw;
+  max-height: 860px;
+  width: 50%;
+  max-width: 860px;
+  margin: 0 auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 5px solid black;
 }
 
 #newGrid:hover {
-    cursor: crosshair;
+  cursor: crosshair;
 }
 
 .row {
-    display: flex;
-    flex-direction: row;
-    align-items: stretch;
-    flex-grow: 1;
-    width: auto;
-    box-sizing: border-box;
-    /* border: 5px solid blue; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: stretch;
+      -ms-flex-align: stretch;
+          align-items: stretch;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  width: auto;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* border: 5px solid blue; */
 }
 
 .column {
-    /* border: 5px solid black; */
-    flex-grow: 1;
-    height: 100%;
-    background-color: white;
+  /* border: 5px solid black; */
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  height: 100%;
+  background-color: white;
 }
 
 .color {
-    background-color: black;
+  background-color: black;
 }
+/*# sourceMappingURL=style.css.map */

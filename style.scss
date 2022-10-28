@@ -1,0 +1,80 @@
+@mixin gridStyles {
+  display: flex;
+  flex-direction: column;
+  height: 50vw;
+  max-height: 860px;
+  width: 50%;
+  max-width: 860px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border: 5px solid black;
+  &:hover {
+    cursor: crosshair;
+  }
+}
+
+$fontFamily: 'B612 Mono', monospace;
+
+body {
+  margin: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(218, 219, 219, 1) 0%,
+    rgba(102, 103, 103, 1) 100%
+  );
+}
+
+button {
+  margin: 50px 35%;
+  width: 30%;
+  padding: 10px;
+  font-size: 2vw;
+  border-radius: 8px;
+  font-family: $fontFamily;
+  box-shadow: 5px 5px 18px #3a3a3a;
+  color: black;
+  background-color: rgb(236, 233, 233);
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+h1 {
+  display: block;
+  font-family: $fontFamily;
+  font-size: 1rem;
+  color: white;
+  width: 60%;
+  text-align: center;
+  margin: 20px 20%;
+}
+
+#grid {
+  @include gridStyles();
+}
+
+#newGrid {
+  @include gridStyles();
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    flex-grow: 1;
+    width: auto;
+    box-sizing: border-box;
+    /* border: 5px solid blue; */
+}
+
+.column {
+    /* border: 5px solid black; */
+    flex-grow: 1;
+    height: 100%;
+    background-color: white;
+}
+
+.color {
+    background-color: black;
+}
